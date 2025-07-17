@@ -7,7 +7,7 @@ body {
     background-size: cover;
 }
 
-#fonfoNosotros {
+#fondoNosotros {
     background-color: #000000;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%231b1b1b' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23363636' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23515151' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%236c6c6c' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23878787' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
     background-attachment: fixed;
@@ -314,32 +314,36 @@ main p {
     color: #ffb22c;
 }
 
-.linc{
+.linc {
     transition: transform 0.5s ease;
 
 }
 
-.linc:hover{
+.linc:hover {
     transform: scale(1.02);
 }
 
-.fondoTabla{
+.fondoTabla {
     background-color: #ffb22c;
     color: black;
 }
 
-#detalles{
+#detalles {
     align-items: end;
     justify-content: center;
+    cursor: pointer;
 }
 
-#listaReserva{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+#listaReserva {
+
+    margin-right: 40px;
+    margin-left: 60px;
+    justify-content: center;
     align-items: center;
+    text-align: justify;
 }
-#terminos{
+
+#terminos {
     align-items: center;
     color: white;
     text-align: center;
@@ -352,27 +356,27 @@ main p {
     border-radius: 40px;
 }
 
-#mapa{
+#mapa {
     display: flex;
     width: 100%;
 }
 
-#terminos h2{
+#terminos h2 {
     font-size: 30px;
     margin-top: 30px;
 }
 
 #terminos ul {
-  padding-left: 0;
-  text-align: left;
-  max-width: 100%; /* para que se adapte sin romper diseño */
-  word-wrap: break-word; /* asegura que las palabras largas no rompan diseño */
+    padding-left: 0;
+    text-align: left;
+    max-width: 100%;
+    word-wrap: break-word;
 }
 
 #terminos li {
-  margin-bottom: 10px;
-  line-height: 1.6;
-  text-indent: -1.2em; /* trae el punto hacia adentro si se usa 'inside' */
-  padding-left: 1.2em;  /* da espacio al texto sin dejar el punto aislado */
+    margin-bottom: 10px;
+    line-height: 1.6;
+    text-indent: -1.2em;
+    padding-left: 1.2em;
 }
 
