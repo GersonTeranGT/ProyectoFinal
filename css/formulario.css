@@ -1,0 +1,25 @@
+.valido {
+    border-bottom-width: 2px;
+    border-color: blue;
+    transition: border-color 0.3s ease;
+}
+
+.invalido {
+    border-bottom-width: 2px;
+    border-color: red;
+    transition: border-color 0.3s ease;
+}
+
+#registroExitoso {
+    color: #000000;
+    font-weight: bold;
+    margin-top: 20px;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.mensajeExito {
+    color: #0ea5e9;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    transition: all 0.3s ease;
+}

@@ -1,0 +1,80 @@
+.particle-deconstruct-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 560px;
+
+
+}
+
+.bg-video{
+opacity: 90%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.particle-deconstruct-element {
+  width: 600px;
+  height: 500px;
+letter-spacing: 30px;
+font-size: 300px;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.particle-deconstruct-element h2 {
+  color: #c78006;
+  font-size: 2rem;
+  position: relative;
+  z-index: 2;
+  transition: all 0.5s ease;
+}
+
+.particle-deconstruct-element::before,
+.particle-deconstruct-element::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: repeating-radial-gradient(
+    circle at center, 
+    #ffb22c 1px, 
+    transparent 2px, 
+    transparent 50px
+  );
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.particle-deconstruct-element:hover h2 {
+  transform: scale(1.5) rotate(360deg);
+  opacity: 0;
+}
+
+.particle-deconstruct-element:hover::before {
+  transform: scale(2) rotate(45deg);
+  opacity: 0.3;
+}
+
+.particle-deconstruct-element:hover::after {
+  transform: scale(2) rotate(-45deg);
+  opacity: 0.3;
+  
+}
+
+#explora{
+  font-size: 90px;
+}
+/*otra animacion*/
