@@ -67,6 +67,46 @@ body {
     transform: scale(1.02);
 }
 
+#botonPagar{
+    cursor: pointer;
+}
+#botonNisan{
+    cursor: pointer;
+}
+#botonAston{
+    cursor: pointer;
+}
+#botonMcartura{
+    cursor: pointer;
+}
+#botonBmw{
+    cursor: pointer;
+}
+#botonMclaren{
+    cursor: pointer;
+}
+#botonJaguar{
+    cursor: pointer;
+}
+#botonMercedes{
+    cursor: pointer;
+}
+#botonFerrari{
+    cursor: pointer;
+}
+#botonCorvet{
+    cursor: pointer;
+}
+#botonFord{
+    cursor: pointer;
+}
+#botonNissan{
+    cursor: pointer;
+}
+#botonLamborghini{
+    cursor: pointer;
+}
+
 .contenidoPrincipal {
     max-width: 1000px;
     margin: 0 auto;
