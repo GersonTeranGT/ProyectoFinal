@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 560px;
+  height: 400px;
 
 
 }
@@ -21,7 +21,7 @@ opacity: 90%;
 
 .particle-deconstruct-element {
   width: 600px;
-  height: 500px;
+  height: 400px;
 letter-spacing: 30px;
 font-size: 300px;
 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;

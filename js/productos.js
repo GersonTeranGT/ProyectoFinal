@@ -56,7 +56,7 @@ const validarNombre = () => {
     } else {
         errorNombre.textContent = "";
         inputNombre.classList.add("valido"); //agregar la clase valido
-        inputNombre.classList.remove("invalido"); //remueve la calse invalido
+        inputNombre.classList.remove("invalido"); //remueve la clase invalido
         return true; //retorna verdadero
     }
 };
@@ -248,19 +248,19 @@ botonEnviar.onclick = async (event) => {
     let auto = document.getElementById('auto').value.trim();
     let pago = document.querySelector('input[name= "pago"]:checked')?.value.trim() || "No seleccionado";
 
-    const nuevaFila = document.createElement("tr");
-    nuevaFila.innerHTML = `
-    <td>${nombre}</td>
-    <td>${apellido}</td>
-    <td>${cedula}</td>
-    <td>${telefono}</td>
-    <td>${email}</td>
-    <td>${direccion}</td>
-    <td>${auto}</td>
-    <td>${pago}</td>
-    `;
-    alert("Datos agregados a la tabla");
-    document.querySelector("table tbody").appendChild(nuevaFila);
+    // const nuevaFila = document.createElement("tr");
+    // nuevaFila.innerHTML = `
+    // <td>${nombre}</td>
+    // <td>${apellido}</td>
+    // <td>${cedula}</td>
+    // <td>${telefono}</td>
+    // <td>${email}</td>
+    // <td>${direccion}</td>
+    // <td>${auto}</td>
+    // <td>${pago}</td>
+    // `;
+    alert("Su reserva se agregó correctamente. Gracias!!");
+    // document.querySelector("table tbody").appendChild(nuevaFila);
 
     // OBJETO CLIENTE
     const cliente = {nombre, apellido, cedula, telefono, email, direccion, auto, pago};
@@ -275,7 +275,7 @@ botonEnviar.onclick = async (event) => {
         mensajeExitoso.textContent = "Enviando..."
         //espera el tiempo para enviar el mensaje, hace que siga ejecutandose
         await new Promise(resolve => setTimeout(resolve, 150))
-        mensajeExitoso.textContent = "Su reserva se agregó correctamente. Gracias!!";
+        mensajeExitoso.textContent = "¡Felicidades!, su reserva se ha realizado con éxito.";
         formulario.reset();
         inputNombre.classList.remove('valido');
         inputApellido.classList.remove('valido');
